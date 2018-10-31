@@ -1,6 +1,10 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCircle,
+  faLaptop,
+  faServer,
+  faDatabase
+} from '@fortawesome/free-solid-svg-icons';
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faGithubAlt, faCircle);
+library.add(faGithubAlt, faCircle, faLaptop, faServer, faDatabase);

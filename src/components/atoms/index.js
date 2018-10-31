@@ -1,2 +1,2 @@
-import ProfileIcon from './ProfileIcon';
-import StackIcon from './StackIcon';
+export { default as ProfileIcon } from './ProfileIcon';
+export { default as StackIcon } from './StackIcon';
