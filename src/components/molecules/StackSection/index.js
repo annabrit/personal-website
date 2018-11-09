@@ -1,16 +1,25 @@
 import React from 'react';
-import { StackIcon } from '../../atoms';
+import { StackIcon, FancyText } from '../../atoms';
+import './StackSection.scss';
 
 const StackSection = ({ name, techs, notes }) => {
   return (
-    <div>
-      <StackIcon name={name} />
-      <ul>
-        {techs.map((tech, idx) => (
-          <li key={idx}>{tech}</li>
-        ))}
-      </ul>
-      <p>{notes}</p>
+    <div className="StackSection">
+      <div className="container">
+        <StackIcon name={name} />
+      </div>
+      <div className="container">
+        <ul>
+          {techs.map((tech, idx) => (
+            <li key={idx}>
+              <FancyText>{tech}</FancyText>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="container text">
+        <p>{notes}</p>
+      </div>
     </div>
   );
 };
