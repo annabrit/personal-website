@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { StackIcon } from './components/atoms';
+import { StackIcon, ColorDrip } from './components/atoms';
+import { ColorFall } from './components/molecules';
 import { ProjectList } from './components/ecosystems';
 import './App.scss';
 import './fontawesomeIconLibrary';
@@ -9,6 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <ColorFall />
         <ProjectList
           projects={[
             {
