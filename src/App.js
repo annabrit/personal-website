@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { StackIcon, ColorDrip } from './components/atoms';
+import { StackIcon, ColorDrip, ProfilePic } from './components/atoms';
 import { ColorFall } from './components/molecules';
 import { ProjectList } from './components/ecosystems';
 import './App.scss';
@@ -10,7 +10,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ColorFall />
+        <div>
+          <ProfilePic />
+          <ColorFall />
+        </div>
         <ProjectList
           projects={[
             {
@@ -39,7 +42,14 @@ class App extends Component {
         <FontAwesomeIcon
           icon={['fab', 'github-alt']}
           size="6x"
-          style={{ color: 'red', backgroundColor: 'blue' }}
+          style={{ backgroundImage: `linear-gradient(blue, green)` }}
+          mask={['fa', 'circle']}
+          transform="shrink-4"
+        />
+        <FontAwesomeIcon
+          icon={['fab', 'github-alt']}
+          size="6x"
+          className="test"
           mask={['fa', 'circle']}
           transform="shrink-4"
         />

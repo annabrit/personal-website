@@ -24,6 +24,10 @@ const ColorFall = () => {
         />
         <ColorDrip colors={['#A5D1CE', '#BEF4F2']} length={200} width={60} />
       </div>
+      <div className="stack">
+        <ColorDrip colors={['#B6D6A0', '#8ECE63']} length={450} width={60} />
+        <ColorDrip colors={['#DCFCB3', '#C4EF8B']} length={250} width={60} />
+      </div>
     </div>
   );
 };

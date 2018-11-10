@@ -1,12 +1,13 @@
 import React from 'react';
 import { ProjectSection } from '../../organisms';
+import { BigGradientText } from '../../atoms';
 import './ProjectList.scss';
 
 const ProjectList = ({ projects }) => {
   return (
     <section className="ProjectList">
       <div>
-        <h1>Projects</h1>
+        <BigGradientText>Projects</BigGradientText>
       </div>
       {projects.map((project, key) => {
         return (
