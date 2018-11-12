@@ -35,13 +35,13 @@ const ProfileIcon = ({ link, name }) => {
               restart="whenNotActive"
               from="24"
               to="36"
-              id="grow-anim"
+              id={`${name[1]}-grow-anim`}
               fill="freeze"
             />
             <animate
               xlinkHref={`#${name[1]}-button-circle`}
               attributeName="r"
-              begin="grow-anim.end + 500ms"
+              begin={`${name[1]}-grow-anim.end + 500ms`}
               dur="250ms"
               repeatCount="1"
               to="24"

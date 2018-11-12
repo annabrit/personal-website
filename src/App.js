@@ -27,6 +27,8 @@ class App extends Component {
             }}
           >
             <ProfileIcon name={['fab', 'github-alt']} />
+            <ProfileIcon name={['fab', 'linkedin-in']} />
+            <ProfileIcon name={['fab', 'angellist']} />
           </div>
         </ProfileSection>
         <ProjectList

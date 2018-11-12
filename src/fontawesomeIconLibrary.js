@@ -7,10 +7,16 @@ import {
   faExternalLinkAlt,
   faCode
 } from '@fortawesome/free-solid-svg-icons';
-import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
+import {
+  faGithubAlt,
+  faLinkedinIn,
+  faAngellist
+} from '@fortawesome/free-brands-svg-icons';
 
 library.add(
   faGithubAlt,
+  faLinkedinIn,
+  faAngellist,
   faCircle,
   faLaptop,
   faServer,
