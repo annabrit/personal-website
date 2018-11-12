@@ -8,6 +8,7 @@ import {
 } from './components/atoms';
 import { ColorFall } from './components/molecules';
 import { ProjectList } from './components/ecosystems';
+import { ProfileSection } from './components/organisms';
 import './App.scss';
 import './fontawesomeIconLibrary';
 
@@ -15,60 +16,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <svg>
-          <defs>
-            <radialGradient id="smallGradient" r="100%">
-              <stop offset="10%" stop-color="#f7e69a" />
-              <stop offset="70%" stop-color="#f4c708" />
-              <stop offset="100%" stop-color="#f7c708" />
-              {/* <stop offset="100%" stop-color="#f7e69a" /> */}
-            </radialGradient>
-
-            <animate
-              xlinkHref="#smallGradient"
-              attributeName="r"
-              dur="2s"
-              from="30%"
-              to="100%"
-              repeatCount="2"
-              begin="button-circle.mouseover + 60ms"
-              fill="remove"
-            />
-            <animate
-              xlinkHref="#button-circle"
-              attributeName="r"
-              begin="mouseover"
-              end="mouseout"
-              dur="2s"
-              repeatCount="1"
-              from="24"
-              to="48"
-              id="grow-anim"
-              fill="freeze"
-            />
-            <animate
-              xlinkHref="#button-circle"
-              attributeName="r"
-              begin="mouseout"
-              dur="500ms"
-              repeatCount="1"
-              to="24"
-              fill="freeze"
-            />
-          </defs>
-          <circle
-            id="button-circle"
-            fill="url(#smallGradient)"
-            cx="50"
-            cy="50"
-            r="24"
-          />
-        </svg>
-        <div>
-          <ProfileIcon name={['fab', 'github-alt']} />
+        <ProfileSection>
+          <h1>hi!</h1>
           <ProfilePic />
-          <ColorFall />
-        </div>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}
+          >
+            <ProfileIcon name={['fab', 'github-alt']} />
+          </div>
+        </ProfileSection>
         <ProjectList
           projects={[
             {
