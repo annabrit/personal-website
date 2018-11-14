@@ -11,10 +11,10 @@ const Profile = ({ children }) => {
         <ProfilePic />
         <div
           style={{
+            width: '100%',
             display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            backgroundColor: 'purple'
+            justifyContent: 'space-around',
+            alignItems: 'center'
           }}
         >
           <ProfileIcon name={['fab', 'github-alt']} />

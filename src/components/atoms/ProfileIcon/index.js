@@ -8,7 +8,7 @@ const ProfileIcon = ({ link, name }) => {
   return (
     <div className="profile-icon">
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <svg className="svg-button" width="98" height="98">
+        <svg className="svg-button">
           <defs>
             <radialGradient id={`${name[1]}-small-gradient`} r="100%">
               <stop offset="10%" stopColor="#C0DD5F" />
@@ -33,8 +33,8 @@ const ProfileIcon = ({ link, name }) => {
               dur="500ms"
               repeatCount="1"
               restart="whenNotActive"
-              from="24"
-              to="36"
+              from="40%"
+              to="50%"
               id={`${name[1]}-grow-anim`}
               fill="freeze"
             />
@@ -44,19 +44,25 @@ const ProfileIcon = ({ link, name }) => {
               begin={`${name[1]}-grow-anim.end + 500ms`}
               dur="250ms"
               repeatCount="1"
-              to="24"
+              to="40%"
               fill="freeze"
             />
           </defs>
           <circle
             id={`${name[1]}-button-circle`}
             fill={`url(#${name[1]}-small-gradient)`}
-            cx="48"
-            cy="48"
-            r="24"
+            cx="50%"
+            cy="50%"
+            r="40%"
           />
-          <svg x="34" y="34">
-            <FontAwesomeIcon icon={name} color="white" height="28" width="28" />
+          <svg className="svg-icon-wrapper" x="31%" y="31%">
+            <FontAwesomeIcon
+              className="icon"
+              icon={name}
+              color="white"
+              height="40%"
+              width="40%"
+            />
           </svg>
         </svg>
       </a>

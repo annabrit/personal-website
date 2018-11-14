@@ -1,0 +1,11 @@
+@import '../../../index.scss';
+
+.profile-icon {
+  .svg-button {
+    width: calc(var(--profile-width) / 4);
+    height: calc(var(--profile-width) / 4);
+  }
+  .icon {
+    color: $white;
+  }
+}
