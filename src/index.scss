@@ -1,6 +1,57 @@
+//breakpoints
+$tablet-min-width: '480px';
+$desktop-min-width: '1024px';
+
+//color definitions
+$subtly-green: #ebf2d7;
+$white: #f9ffed;
+$blue: #2780c4;
+$black: #131515;
+$dark-blue: rgb(7, 62, 99);
+$light-blue: rgb(109, 160, 207);
+
+//color
+$primary-background-color: $subtly-green;
+$secondary-background-color: $white;
+
+$primary-heading-text-color: $blue;
+$secondary-heading-text-color: $white;
+
+$gradient-dark-heading-text-color: $dark-blue;
+$gradient-light-heading-text-color: $light-blue;
+
+$primary-text-color: $black;
+
+//fonts
+$heading-font: Comfortaa, sans-serif;
+$content-font: 'Open Sans', sans-serif;
+
+//mobile screen defaults
+:root {
+  --profile-width: 90vw;
+  --content-width: 90vw;
+}
+//tablet screens
+@media screen and (min-width: $tablet-min-width) {
+  :root {
+    --profile-width: 30vw;
+    --content-width: 60vw;
+  }
+}
+
+@media screen and (min-width: $desktop-min-width) {
+  :root {
+    --profile-width: 20vw;
+    --content-width: 70vw;
+  }
+}
+// @mixin profile-width() { // @media only screen and // } body {
+/* background-color: #ddf7d9; */
+/* #e7f4c3; */
+/* #E2F2B5 */
+
+//fonts
 body {
-  /* background-color: #ddf7d9; */
-  /* #e7f4c3; */
-  /* #E2F2B5 */
-  background-color: #ebf2d7;
+  font-family: $content-font;
+  background-color: $primary-background-color;
 }

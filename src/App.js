@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  StackIcon,
-  ColorDrip,
-  ProfilePic,
-  ProfileIcon
-} from './components/atoms';
-import { ColorFall } from './components/molecules';
-import { ProjectList } from './components/ecosystems';
-import { ProfileSection } from './components/organisms';
+import { StackIcon } from './components/atoms';
+import { ProjectList, Profile } from './components/ecosystems';
 import './App.scss';
 import './fontawesomeIconLibrary';
 
@@ -16,21 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ProfileSection>
-          <h1>hi!</h1>
-          <ProfilePic />
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center'
-            }}
-          >
-            <ProfileIcon name={['fab', 'github-alt']} />
-            <ProfileIcon name={['fab', 'linkedin-in']} />
-            <ProfileIcon name={['fab', 'angellist']} />
-          </div>
-        </ProfileSection>
+        <Profile>hi!</Profile>
         <ProjectList
           projects={[
             {
@@ -52,24 +31,10 @@ class App extends Component {
             }
           ]}
         />
-        <hr />
+        {/* <hr />
         <StackIcon name="database" />
         <StackIcon name="server-side" />
-        <StackIcon name="front-end" />
-        <FontAwesomeIcon
-          icon={['fab', 'github-alt']}
-          size="6x"
-          style={{ backgroundImage: `linear-gradient(blue, green)` }}
-          mask={['fa', 'circle']}
-          transform="shrink-4"
-        />
-        <FontAwesomeIcon
-          icon={['fab', 'github-alt']}
-          size="6x"
-          className="test"
-          mask={['fa', 'circle']}
-          transform="shrink-4"
-        />
+        <StackIcon name="front-end" /> */}
       </div>
     );
   }

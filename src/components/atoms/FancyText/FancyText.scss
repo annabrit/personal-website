@@ -1,5 +1,7 @@
+@import '../../../index.scss';
+
 .FancyText {
-  font-family: Helvetica;
+  font-family: $content-font;
   color: #2780c4;
   font-weight: bold;
   font-size: 20px;

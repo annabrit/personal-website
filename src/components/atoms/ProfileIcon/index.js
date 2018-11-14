@@ -11,9 +11,9 @@ const ProfileIcon = ({ link, name }) => {
         <svg className="svg-button" width="98" height="98">
           <defs>
             <radialGradient id={`${name[1]}-small-gradient`} r="100%">
-              <stop offset="10%" stopColor="#88CCF1" />
-              <stop offset="70%" stopColor="#2D6989" />
-              <stop offset="100%" stopColor="#88CCF1" />
+              <stop offset="10%" stopColor="#C0DD5F" />
+              <stop offset="70%" stopColor="#8DC403" />
+              <stop offset="100%" stopColor="#C0DD5F" />
             </radialGradient>
 
             <animate
@@ -23,7 +23,7 @@ const ProfileIcon = ({ link, name }) => {
               from="30%"
               to="100%"
               repeatCount="1"
-              begin={`${name[1]}-button-circle.mouseenter + 60ms`}
+              begin={`${name[1]}-grow-anim.begin+ 60ms`}
               fill="remove"
             />
             <animate

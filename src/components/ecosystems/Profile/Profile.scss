@@ -1,0 +1,12 @@
+@import '../../../index.scss';
+
+.profile {
+  width: var(--profile-width);
+  //   text-align: center;
+  h1 {
+    font-family: $heading-font;
+    color: $secondary-heading-text-color;
+    font-size: 48px;
+    text-align: center;
+  }
+}

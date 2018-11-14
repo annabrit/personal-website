@@ -1,3 +1,5 @@
+@import '../../../index.scss';
+
 .color-fall {
   display: flex;
   flex-direction: row;
@@ -6,7 +8,8 @@
 
   .stack {
     position: relative;
-    width: 60px;
+    //width: $profile-width/5;
+    width: 20%;
     height: 500px;
   }
 }

@@ -7,7 +7,7 @@ const ProjectList = ({ projects }) => {
   return (
     <section className="ProjectList">
       <div>
-        <BigGradientText>Projects</BigGradientText>
+        <BigGradientText>projects</BigGradientText>
       </div>
       {projects.map((project, key) => {
         return (

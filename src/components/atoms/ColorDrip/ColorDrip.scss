@@ -1,0 +1,8 @@
+@import '../../../index.scss';
+div.color-drip {
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  border-radius: 0 0 calc(var(--profile-width) / 5)
+    calc(var(--profile-width) / 5);
+}

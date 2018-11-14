@@ -1,15 +1,12 @@
 import React from 'react';
+import './ColorDrip.scss';
 
-const ColorDrip = ({ colors, length, width, depth }) => {
+const ColorDrip = ({ colors, length }) => {
   let style = {
     backgroundImage: `linear-gradient(${colors.join(', ')})`,
-    height: `${length}px`,
-    width: `${width}px`,
-    borderRadius: `0px 0px ${Number(width) / 2}px ${Number(width) / 2}px`,
-    display: 'inline-block',
-    position: 'absolute'
+    height: `${length}px`
   };
-  return <div style={style} />;
+  return <div className="color-drip" style={style} />;
 };
 
 export default ColorDrip;
