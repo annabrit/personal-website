@@ -5,8 +5,9 @@
   //   text-align: center;
   h1 {
     font-family: $heading-font;
-    color: $secondary-heading-text-color;
+    color: $welcome-text-color;
     font-size: 48px;
     text-align: center;
+    letter-spacing: 0.3ch;
   }
 }

@@ -4,12 +4,27 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  height: 400px;
+  height: 45vh;
 
   .stack {
     position: relative;
-    //width: $profile-width/5;
     width: 20%;
     height: 500px;
+    @for $i from 0 through 4 {
+      .#{color-drip}-#{$i}-under {
+        height: random(30) + 15vh;
+        background-image: linear-gradient(
+          $dark-peacock,
+          adjust-hue($medium-peacock, random(40) - 10deg)
+        );
+      }
+      .#{color-drip}-#{$i}-over {
+        height: random(15) + 10vh;
+        background-image: linear-gradient(
+          $medium-peacock,
+          adjust-hue($light-peacock, random(30) - 10deg)
+        );
+      }
+    }
   }
 }

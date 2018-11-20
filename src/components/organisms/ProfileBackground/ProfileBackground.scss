@@ -1,14 +1,13 @@
 @import '../../../index.scss';
 .profile-background {
   display: inline-block;
-  background-image: linear-gradient(#3c97d8, #95c4e5, #a3d9ff);
+  background-image: linear-gradient($dark-peacock, $medium-peacock);
   box-sizing: border-box;
 
   width: 100%;
-  padding: 3vw;
+  padding: 7%;
   img {
     width: 100%;
     border-radius: 30px;
   }
 }
-//make sizing dynamic

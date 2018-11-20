@@ -59,7 +59,6 @@ const ProfileIcon = ({ link, name }) => {
             <FontAwesomeIcon
               className="icon"
               icon={name}
-              color="white"
               height="40%"
               width="40%"
             />
