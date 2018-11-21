@@ -9,7 +9,6 @@
   .stack {
     position: relative;
     width: 20%;
-    height: 500px;
     @for $i from 0 through 4 {
       .#{color-drip}-#{$i}-under {
         height: random(30) + 15vh;

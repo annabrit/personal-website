@@ -14,13 +14,13 @@ $pale-blue: #a3d9ff;
 //_______________________________
 //https://www.design-seeds.com/seasons/spring/seasons-serving/
 //$pale-sage: #cfe5ba;
-$pale-sage: #b7d394;
-$sage: #b7d394;
+$pale-sage: #e0ebcf;
+$sage: #cfdf8d;
 $slate: #222c33;
 $dark-peacock: #204f61;
 $medium-peacock: #417d97;
 $light-peacock: #85b9c4;
-$frost-blue: #e2fdf0;
+$frost-blue: #e6f1f9;
 //color
 $primary-background-color: $slate;
 $secondary-background-color: $frost-blue;
@@ -28,9 +28,6 @@ $secondary-background-color: $frost-blue;
 $primary-heading-text-color: $medium-peacock;
 $welcome-text-color: $white;
 $section-header-text-color: $sage;
-
-$gradient-dark-heading-text-color: $dark-blue;
-$gradient-light-heading-text-color: $light-blue;
 
 $primary-text-color: $black;
 
@@ -40,7 +37,7 @@ $content-font: 'Open Sans', sans-serif;
 
 //mobile screen defaults
 :root {
-  --profile-width: 90vw;
+  --profile-width: 80vw;
   --content-width: 90vw;
 }
 //tablet screens
@@ -53,8 +50,8 @@ $content-font: 'Open Sans', sans-serif;
 
 @media screen and (min-width: $desktop-min-width) {
   :root {
-    --profile-width: 20vw;
-    --content-width: 70vw;
+    --profile-width: 300px;
+    --content-width: 60vw;
   }
 }
 // @mixin profile-width() { // @media only screen and // } body {
@@ -63,7 +60,3 @@ $content-font: 'Open Sans', sans-serif;
 /* #E2F2B5 */
 
 //fonts
-body {
-  font-family: $content-font;
-  background-color: $primary-background-color;
-}
