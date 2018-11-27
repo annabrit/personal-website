@@ -1,4 +1,4 @@
-@import '../../../index';
+@import '../../../index.scss';
 
 .project-section-wrapper {
   display: inline-block;
@@ -9,9 +9,10 @@
   flex-direction: column;
   justify-content: start;
   h3 {
-    font-family: $content-font;
-    color: $primary-heading-text-color;
+    font-family: $heading-font;
+    color: $dark-peacock;
     margin: 0;
+    font-size: 24px;
   }
   .project-section-header {
     display: flex;
@@ -28,5 +29,12 @@
     flex-direction: row;
     justify-content: space-between;
     min-width: 3rem;
+  }
+  .project-icon {
+    color: $dark-peacock;
+    font-size: 2rem;
+  }
+  .project-icon:hover {
+    color: $medium-peacock;
   }
 }

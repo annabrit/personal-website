@@ -9,6 +9,13 @@
     color: $welcome-text-color;
     font-size: 48px;
     text-align: center;
-    letter-spacing: 0.3ch;
+    letter-spacing: 0.4ch;
+  }
+  .profile-icon-wrapper {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }

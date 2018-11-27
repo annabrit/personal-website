@@ -1,6 +1,6 @@
 import React from 'react';
 import selfie from './IMG_4554.JPG';
-import './ProfilePic.scss';
+
 const ProfilePic = ({ image }) => {
   return (
     <img

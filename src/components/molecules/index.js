@@ -1,2 +1,2 @@
-export { default as StackSection } from './StackSection';
+export { default as StackSummary } from './StackSummary';
 export { default as ColorFall } from './ColorFall';

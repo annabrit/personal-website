@@ -1,8 +1,8 @@
 @import '../../../index.scss';
 
-.FancyText {
+.sub-heading-text {
   font-family: $content-font;
-  color: #2780c4;
+  color: $primary-heading-text-color;
   font-weight: bold;
   font-size: 20px;
   padding: 0px;

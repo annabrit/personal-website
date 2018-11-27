@@ -15,7 +15,9 @@ const StackIcon = ({ name }) => {
       'name for StackIcon needs to be one of front-end, server-side, or database'
     );
   }
-  return <FontAwesomeIcon color="#2780C4" icon={icon} size="6x" fixedWidth />;
+  return (
+    <FontAwesomeIcon className="stack-icon" icon={icon} size="6x" fixedWidth />
+  );
 };
 
 export default StackIcon;

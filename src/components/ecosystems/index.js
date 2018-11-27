@@ -1,3 +1,3 @@
-export { default as ProjectList } from './ProjectList';
-export { default as Profile } from './Profile';
-export { default as About } from './About';
+export { default as ProjectSection } from './ProjectSection';
+export { default as ProfileSection } from './ProfileSection';
+export { default as AboutSection } from './AboutSection';

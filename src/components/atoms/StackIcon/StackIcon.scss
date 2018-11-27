@@ -1,5 +1,6 @@
+@import '../../../index.scss';
 .stack-icon {
-  color: 'red';
+  color: $primary-heading-text-color;
   margin: 0;
   padding: auto;
 }

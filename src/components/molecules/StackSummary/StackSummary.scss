@@ -1,8 +1,9 @@
-.StackSection {
+.StackSummary {
   display: flex;
   flex-direction: row;
   justify-content: start;
   flex-wrap: wrap;
+  align-items: center;
   ul {
     padding: 0px;
     margin: 0px;
@@ -11,10 +12,10 @@
   }
   .container {
     margin: 1rem;
-    flex-grow: 1;
   }
   .text {
     flex-grow: 4;
     width: 10rem;
+    min-width: 60%;
   }
 }

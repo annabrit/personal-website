@@ -1,10 +1,10 @@
 import React from 'react';
-import { StackIcon, FancyText } from '../../atoms';
-import './StackSection.scss';
+import { StackIcon, SubHeadingText } from '../../atoms';
+import './StackSummary.scss';
 
-const StackSection = ({ name, techs, notes }) => {
+const StackSummary = ({ name, techs, notes }) => {
   return (
-    <div className="StackSection">
+    <div className="StackSummary">
       <div className="container">
         <StackIcon name={name} />
       </div>
@@ -12,7 +12,7 @@ const StackSection = ({ name, techs, notes }) => {
         <ul>
           {techs.map((tech, idx) => (
             <li key={idx}>
-              <FancyText>{tech}</FancyText>
+              <SubHeadingText>{tech}</SubHeadingText>
             </li>
           ))}
         </ul>
@@ -24,4 +24,4 @@ const StackSection = ({ name, techs, notes }) => {
   );
 };
 
-export default StackSection;
+export default StackSummary;

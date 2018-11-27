@@ -7,7 +7,7 @@ const ProfileIcon = ({ link, name }) => {
   console.log(`${name[1]}-small-gradient`);
   return (
     <div className="profile-icon">
-      <a href={link} target="_blank" rel="noopener noreferrer">
+      <a href={link}>
         <svg className="svg-button">
           <defs>
             <radialGradient id={`${name[1]}-small-gradient`} r="100%">

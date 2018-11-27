@@ -1,10 +1,10 @@
 import React from 'react';
 import { Card } from '../../atoms';
-import { StackSection } from '../../molecules';
+import { StackSummary } from '../../molecules';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './ProjectSection.scss';
+import './ProjectDescription.scss';
 
-const ProjectSection = ({ title, description, techStack }) => {
+const ProjectDescription = ({ title, description, techStack }) => {
   return (
     <div className="Project-section-wrapper">
       <Card>
@@ -12,17 +12,26 @@ const ProjectSection = ({ title, description, techStack }) => {
           <div className="project-section-header">
             <h3>{title}</h3>
             <div className="external-project-links">
-              <FontAwesomeIcon color="#2780c4" icon={['fa', 'code']} />
+              <a href="http://localhost:3000/">
+                <FontAwesomeIcon
+                  className="project-icon"
+                  icon={['fa', 'code']}
+                  mask={['fa', 'circle']}
+                  transform="shrink-9"
+                />
+              </a>
               <FontAwesomeIcon
-                color="#2780c4"
+                className="project-icon"
                 icon={['fas', 'external-link-alt']}
+                transform="shrink-9 right-0.7"
+                mask={['fa', 'circle']}
               />
             </div>
           </div>
           <p>{description}</p>
           {techStack.map((stack, idx) => {
             return (
-              <StackSection
+              <StackSummary
                 name={stack.name}
                 techs={stack.techs}
                 notes={stack.notes}
@@ -36,4 +45,4 @@ const ProjectSection = ({ title, description, techStack }) => {
   );
 };
 
-export default ProjectSection;
+export default ProjectDescription;
