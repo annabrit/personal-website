@@ -1,3 +1,10 @@
+#My Personal Website
+
+Currently lives at [annabrit.github.io/personal-site](http://annabrit.github.io/personal-site)
+I had a lot of fun this this project, and some of the details are described on the site itself (so meta).
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -4,7 +4,7 @@ import { StackSummary } from '../../molecules';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './ProjectDescription.scss';
 
-const ProjectDescription = ({ title, description, techStack }) => {
+const ProjectDescription = ({ title, links, description, techStack }) => {
   return (
     <div className="Project-section-wrapper">
       <Card>
@@ -12,7 +12,7 @@ const ProjectDescription = ({ title, description, techStack }) => {
           <div className="project-section-header">
             <h3>{title}</h3>
             <div className="external-project-links">
-              <a href="http://localhost:3000/">
+              <a href={links.code}>
                 <FontAwesomeIcon
                   className="project-icon"
                   icon={['fa', 'code']}
@@ -20,12 +20,14 @@ const ProjectDescription = ({ title, description, techStack }) => {
                   transform="shrink-9"
                 />
               </a>
-              <FontAwesomeIcon
-                className="project-icon"
-                icon={['fas', 'external-link-alt']}
-                transform="shrink-9 right-0.7"
-                mask={['fa', 'circle']}
-              />
+              <a href={links.live}>
+                <FontAwesomeIcon
+                  className="project-icon"
+                  icon={['fas', 'external-link-alt']}
+                  transform="shrink-9 right-0.7"
+                  mask={['fa', 'circle']}
+                />
+              </a>
             </div>
           </div>
           <p>{description}</p>
