@@ -32,7 +32,7 @@ class App extends Component {
                 ],
                 links: {
                   code: 'https://github.com/annabrit/personal-website',
-                  website: 'https://annabrit.github.io/personal-site'
+                  website: 'https://annabrit.github.io/personal-website'
                 }
               }
             ]}
