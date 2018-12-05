@@ -11,3 +11,6 @@ body {
   flex-wrap: wrap;
   font-family: $content-font;
 }
+div.right-side-content {
+  width: var(--content-width);
+}

@@ -1,7 +1,6 @@
 import React from 'react';
 import { ProjectDescription } from '../../organisms';
 import { SectionHeadingText } from '../../atoms';
-import './ProjectSection.scss';
 
 const ProjectSection = ({ projects }) => {
   return (
