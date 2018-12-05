@@ -1,6 +1,6 @@
 #My Personal Website
 
-Currently lives at [annabrit.github.io/personal-site](http://annabrit.github.io/personal-site)
+Currently lives at [annabrit.github.io/personal-site](http://annabrit.github.io/personal-website)
 I had a lot of fun this this project, and some of the details are described on the site itself (so meta).
 
 ---
