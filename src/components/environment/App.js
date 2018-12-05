@@ -29,7 +29,11 @@ class App extends Component {
                     notes:
                       "Even though this project doesn't require any interactivity or have need for state, I wanted to build another project with React just because I enjoy the process of compartmentalizing visual elements. In a past project, I'd used the Styled Component library, but it tended to multiply named components, and I wanted to explore other styling options. I tried out Sass. It was a lot of fun, but CSS in JS would have been the better choice. Some of the SVGs needed in-line styling for animating, and splitting the styling between two different types of files wasn't ideal."
                   }
-                ]
+                ],
+                links: {
+                  code: 'https://github.com/annabrit/personal-website',
+                  website: 'http://annabrit.github.io/personal-site'
+                }
               }
             ]}
           />

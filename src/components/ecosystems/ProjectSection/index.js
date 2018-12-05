@@ -14,6 +14,7 @@ const ProjectSection = ({ projects }) => {
             title={project.title}
             description={project.description}
             techStack={project.techStack}
+            links={project.links}
             key={key}
           />
         );
